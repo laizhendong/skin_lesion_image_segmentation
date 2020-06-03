@@ -13,11 +13,6 @@ This is an implementation of ["An imporved U-Net++ Network for Skin lesion Image
 [Biomedical Informatics, Arizona State University](https://chs.asu.edu/programs/biomedical-informatics) <br/>
 Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlmia4/)) 2018. **(Oral)**
 
-- View [Publication](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1)<br/>
-- View [Code](https://github.com/MrGiovanni/Nested-U-Net)<br/>
-- View [Slides](https://docs.wixstatic.com/ugd/deaea1_1d1e512ebedc4facbb242d7a0f2b7a0b.pdf)<br/>
-- View [Poster](https://docs.wixstatic.com/ugd/deaea1_993c14ef78f844c88a0dae9d93e4857c.pdf)<br/>
-
 
 # Requirements
 Python 3.6, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `requirements.txt`.
@@ -52,16 +47,15 @@ Python 3.6, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `r
 
 ```bash
 git clone https://github.com/laizhendong/skin_lesion_image_segmentation.git
-cd U-NetPlusPlus
 pip install -r requirements.txt
 git submodule update --init --recursive
 ```
 
 # Running the scripts
 
-#### Application 1: [Data ISBI 2016](https://www.kaggle.com/c/data-ISBI2016)
+#### Application 1: [Data ISBI 2016](https://www.kaggle.com/c/data-ISBI 2016)
 ```bash
-CUDA_VISIBLE_DEVICES=0 python DSB2018_application.py --run 1 \
+CUDA_VISIBLE_DEVICES=0 python ISBI2016_application.py --run 1 \
                                                      --arch Xnet \
                                                      --backbone vgg16 \
                                                      --init random \
@@ -77,7 +71,7 @@ CUDA_VISIBLE_DEVICES=0 python DSB2018_application.py --run 1 \
 #### Application 2: [Data ISBI 2017](https://www.kaggle.com/c/data-ISBI 2017)
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python BRATS2013_application.py --run 1 \
+CUDA_VISIBLE_DEVICES=0 python ISBI2017_application.py --run 1 \
                                                      --arch Xnet \
                                                      --backbone DenseNet169 \
                                                      --init random \
