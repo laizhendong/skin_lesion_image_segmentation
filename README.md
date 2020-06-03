@@ -1,6 +1,6 @@
-# U-Net++: A Nested U-Net Architecture for Medical Image Segmentation
+# An imporved U-Net++ Network for Skin lesion Image Segmentation
 
-This is an implementation of ["U-Net++: A Nested U-Net Architecture for Medical Image Segmentation"](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1) in Keras deep learning framework (Tensorflow as backend). **U-Net++** (nested U-Net architecture) is proposed for a more precise segmentation. We introduce intermediate layers to skip connections of U-Net, which naturally form multiple new up-sampling paths from different depths, ensembling U-Nets of various receptive fields.
+This is an implementation of ["An imporved U-Net++ Network for Skin lesion Image Segmentation"] in Keras deep learning framework (Tensorflow as backend). **U-Net++** (nested U-Net architecture) is proposed for a more precise segmentation, which introduce intermediate layers to skip connections of U-Net, which naturally form multiple new up-sampling paths from different depths, ensembling U-Nets of various receptive fields.
 
 <p align="center">
   <img src="https://github.com/MrGiovanni/Nested-U-Net/blob/master/Figures/fig_U-Net%2B%2B.png" width="700"/>
@@ -30,12 +30,12 @@ Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlm
 ```
 
 # Requirements
-Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `requirements.txt`.
+Python 3.6, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `requirements.txt`.
 
 # Available architectures
  - [U-Net](https://arxiv.org/abs/1505.04597)
  - [DLA](http://openaccess.thecvf.com/content_cvpr_2018/papers/Yu_Deep_Layer_Aggregation_CVPR_2018_paper.pdf)
- - **[U-Net++](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1)**
+ - [U-Net++](https://link.springer.com/chapter/10.1007/978-3-030-00889-5_1)**
  - [FPN](http://presentations.cocodataset.org/COCO17-Stuff-FAIR.pdf)
  - [Linknet](https://arxiv.org/abs/1707.03718)
  - [PSPNet](https://arxiv.org/abs/1612.01105)
@@ -61,7 +61,7 @@ Python 3.x, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `r
 # Installation
 
 ```bash
-git clone https://github.com/MrGiovanni/U-NetPlusPlus.git
+git clone https://github.com/laizhendong/skin_lesion_image_segmentation.git
 cd U-NetPlusPlus
 pip install -r requirements.txt
 git submodule update --init --recursive
