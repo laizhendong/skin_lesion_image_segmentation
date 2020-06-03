@@ -18,16 +18,6 @@ Deep Learning in Medical Image Analysis ([DLMIA](https://cs.adelaide.edu.au/~dlm
 - View [Slides](https://docs.wixstatic.com/ugd/deaea1_1d1e512ebedc4facbb242d7a0f2b7a0b.pdf)<br/>
 - View [Poster](https://docs.wixstatic.com/ugd/deaea1_993c14ef78f844c88a0dae9d93e4857c.pdf)<br/>
 
-```
-@incollection{zhou2018unet++,
-  title={U-Net++: A Nested U-Net Architecture for Medical Image Segmentation},
-  author={Zhou, Zongwei and Siddiquee, Md Mahfuzur Rahman and Tajbakhsh, Nima and Liang, Jianming},
-  booktitle={Deep Learning in Medical Image Analysis and Multimodal Learning for Clinical Decision Support},
-  pages={3--11},
-  year={2018},
-  publisher={Springer}
-}
-```
 
 # Requirements
 Python 3.6, Keras 2.2.2, Tensorflow 1.4.1 and other common packages listed in `requirements.txt`.
@@ -69,28 +59,23 @@ git submodule update --init --recursive
 
 # Running the scripts
 
-#### Application 1: [Data Science Bowl 2018](https://www.kaggle.com/c/data-science-bowl-2018)
+#### Application 1: [Data ISBI 2016](https://www.kaggle.com/c/data-ISBI2016)
 ```bash
 CUDA_VISIBLE_DEVICES=0 python DSB2018_application.py --run 1 \
                                                      --arch Xnet \
                                                      --backbone vgg16 \
                                                      --init random \
                                                      --decoder transpose \
-                                                     --input_rows 96 \
-                                                     --input_cols 96 \
+                                                     --input_rows 512 \
+                                                     --input_cols 512 \
                                                      --input_deps 3 \
                                                      --nb_class 1 \
                                                      --batch_size 2048 \
                                                      --weights None \
                                                      --verbose 1
 ```
-#### Application 2: [Liver Tumor Segmentation Challenge (LiTS)](https://competitions.codalab.org/competitions/17094)
+#### Application 2: [Data ISBI 2017](https://www.kaggle.com/c/data-ISBI 2017)
 
-#### Application 3: [Polyp Segmentation (ASU-Mayo)](https://polyp.grand-challenge.org/databases/)
-
-#### Application 4: [Lung Image Database Consortium image collection (LIDC-IDRI)](https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI)
-
-#### Application 5: [Multiparametric Brain Tumor Segmentation (BRATS 2013)](https://www.smir.ch/BRATS/Start2013)
 ```bash
 CUDA_VISIBLE_DEVICES=0 python BRATS2013_application.py --run 1 \
                                                      --arch Xnet \
